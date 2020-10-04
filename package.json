@@ -26,11 +26,11 @@
         "react-dom": "^16.13.1"
     },
     "scripts": {
-        "start": "webpack-dev-server --config webpack.dev.js --hot --open",
-        "build": "webpack --config webpack.prod.js"
+        "start": "webpack-dev-server --config ./webpack.dev.js --hot --open",
+        "build": "webpack --config ./webpack.prod.js"
     },
     "browserslist": [
-        "default",
-        ">0.5%"
+        ">0.5%",
+        "not IE 11"
     ]
 }

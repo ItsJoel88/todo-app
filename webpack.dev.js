@@ -46,5 +46,24 @@ module.exports = {
             filename: 'index.html',
             template: path.resolve(__dirname, 'public', 'index.html')
         })
-    ]
+    ],
+    devtool: 'eval-cheap-source-map',
+    devServer: {
+        stats: {
+            colors: true,
+            hash: false,
+            version: false,
+            timings: false,
+            assets: false,
+            chunks: false,
+            modules: false,
+            reasons: false,
+            children: false,
+            source: false,
+            errors: true,
+            errorDetails: false,
+            warnings: true,
+            publicPath: false
+        }
+    }
 }

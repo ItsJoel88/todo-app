@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 55px;
+    background-color: #ffe2e2;
+    color: #838383;
+    text-align: center;
+    padding: 12px;
+}
+
+.main-content {
+    background-color: #f6f6f6;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+    .form-container {
+        width: 100%;
+        padding: 15px;
+
+        input[type=text] {
+            margin: 8px 0;
+            padding: 8px 22px;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            transition: all .2s ease-in-out;
+
+            &:focus,
+            &:active {
+                box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+            }
+        }
+    }
+}
+
+.form-container {
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        button {
+            align-self: center;
+            margin-top: 8px;
+            width: 25%;
+            outline: none;
+            border: none;
+            background-color: #ffe2e2;
+            color: #838383;
+            font-weight: bold;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all .2s ease-in-out;
+
+            &:hover,
+            &:active {
+                box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.card-container {
+    overflow: hidden;
+    min-width: 100%;
+    max-width: 100%;
+    margin-top: 5px;
+    padding: 6px 9px;
+    display: flex;
+
+    .card {
+        margin: 0 8px;
+        padding: 8px;
+        width: 20%;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+        transition: all 0.2s ease-in-out;
+
+        .card-header {
+            padding: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .card-content {
+            padding: 10px;
+            font-size: 0.95rem;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .date {
+            color: #838383;
+            align-self: flex-end;
+            padding: 10px;
+            font-size: 0.7rem;
+        }
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+}
